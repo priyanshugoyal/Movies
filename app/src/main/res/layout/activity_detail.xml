@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gridcolor"
+    tools:context="com.example.priyanshu.movies.DetailActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/title_view"
+        android:layout_width="456dp"
+        android:layout_height="0dp"
+        android:hint="iron man"
+        android:textColor="@color/textcolor"
+        android:textSize="23sp"
+        android:layout_marginStart="13dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:layout_marginTop="1dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/overview_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="overview"
+        android:textColor="@color/textcolor"
+
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/rating_view"
+        android:layout_width="101dp"
+        android:layout_height="25dp"
+        android:hint="8/10"
+        android:textColor="@color/textcolor"
+android:gravity="end"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/date_view"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:hint="30th may 2017"
+        android:gravity="end"
+        android:layout_marginEnd="11dp"
+        android:textColor="@color/textcolor"
+
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/rating_view"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/textcolor"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="84dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
